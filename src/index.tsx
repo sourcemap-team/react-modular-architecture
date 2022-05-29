@@ -2,7 +2,7 @@ import React from 'react'
 import { createRoot } from 'react-dom/client'
 
 // @ts-ignore
-import AppRouter from './AppRouter.tsx'
+import AppRouter from './core/AppRouter.tsx'
 
 const container = document.getElementById('root')
 

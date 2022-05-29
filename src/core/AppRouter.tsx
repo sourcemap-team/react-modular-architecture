@@ -8,8 +8,8 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import AppLayout from './AppLayout'
-import AuthPage from './core/pages/auth/Index'
-import HomePage from './core/pages/home/Index'
+import AuthPage from './pages/auth/Index'
+import HomePage from './pages/home/Index'
 
 const AppRouter = () => {
   return (
