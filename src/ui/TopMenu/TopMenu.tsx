@@ -12,7 +12,7 @@ function TopMenu() {
 
   return (
     <nav>
-      <ul>
+      <ul style={{ display: 'flex' }}>
         <li>
           <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : undefined)}>
             Home

@@ -7,17 +7,18 @@ import React from 'react'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import AuthPage from './pages/auth/pages/Auth'
-import HomePage from './pages/auth/pages/Home'
-import TopMenu from './ui/TopMenu/TopMenu'
+import AppLayout from './AppLayout'
+import AuthPage from './core/pages/auth/Index'
+import HomePage from './core/pages/home/Index'
 
-const App = () => {
+const AppRouter = () => {
   return (
     <BrowserRouter>
-      <TopMenu />
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/" element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+        </Route>
+        <Route path="auth" element={<AuthPage />} />
         <Route
           path="*"
           element={
@@ -31,4 +32,4 @@ const App = () => {
   )
 }
 
-export default App
+export default AppRouter
