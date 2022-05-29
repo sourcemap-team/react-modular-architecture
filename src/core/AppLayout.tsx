@@ -6,7 +6,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-import TopMenu from './ui/TopMenu/TopMenu'
+import TopMenu from '@core/ui/TopMenu'
 
 const AppLayout = () => {
   return (
