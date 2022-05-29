@@ -9,10 +9,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import AuthPage from './pages/auth/pages/Auth'
 import HomePage from './pages/auth/pages/Home'
+import TopMenu from './ui/TopMenu/TopMenu'
 
 const App = () => {
   return (
     <BrowserRouter>
+      <TopMenu />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/auth" element={<AuthPage />} />
